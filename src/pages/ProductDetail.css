@@ -1,0 +1,168 @@
+.product-detail-page {
+  padding: 120px 0 60px;
+}
+
+.breadcrumb {
+  margin-bottom: 30px;
+  font-size: 14px;
+}
+
+.breadcrumb a {
+  color: var(--primary-color);
+}
+
+.breadcrumb span {
+  color: var(--text-color);
+}
+
+.product-detail {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.product-detail-image {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.product-detail-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.product-detail-content h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: var(--primary-color);
+}
+
+.product-category {
+  color: var(--accent-color);
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.product-description {
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 30px;
+  color: var(--text-color);
+}
+
+.product-benefits {
+  margin-bottom: 30px;
+}
+
+.product-benefits h3,
+.product-sizes h3,
+.product-price h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: var(--primary-color);
+}
+
+.product-benefits ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.product-benefits li {
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+.product-sizes {
+  margin-bottom: 30px;
+}
+
+.size-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.size-option {
+  padding: 8px 16px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  font-size: 14px;
+  background-color: transparent;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.size-option.active {
+  background-color: var(--primary-color);
+  color: var(--white);
+  border-color: var(--primary-color);
+}
+
+.product-price {
+  margin-bottom: 30px;
+}
+
+.product-price span {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.product-actions {
+  display: flex;
+  gap: 15px;
+}
+
+.product-actions .btn {
+  padding: 12px 24px;
+  font-size: 16px;
+}
+
+.loading-container,
+.product-not-found {
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 120px 0 60px;
+}
+
+.product-not-found h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: var(--primary-color);
+}
+
+.product-not-found p {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 992px) {
+  .product-detail {
+    grid-template-columns: 1fr;
+  }
+  
+  .product-detail-image {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .product-detail-page {
+    padding: 100px 0 40px;
+  }
+  
+  .product-detail-content h1 {
+    font-size: 24px;
+  }
+  
+  .product-actions {
+    flex-direction: column;
+  }
+} 
