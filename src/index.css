@@ -1,7 +1,8 @@
 :root {
-  --primary-color: #0a6ebd;
-  --secondary-color: #4caf50;
-  --accent-color: #ff9800;
+  --primary-color: #204a06;
+  --secondary-color: #636009;
+  --accent-color: #ffde00;
+  --accent-color-red: #b01515;
   --text-color: #333;
   --light-text: #666;
   --lighter-text: #999;
@@ -67,8 +68,8 @@ button, .btn {
 }
 
 .btn-secondary {
-  background-color: var(--secondary-color);
-  color: var(--white);
+  background-color: var(--accent-color);
+  color: var(--text-color);
 }
 
 .btn-secondary:hover {

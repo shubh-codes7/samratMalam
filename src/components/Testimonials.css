@@ -38,22 +38,13 @@
 
 .testimonial-author {
   display: flex;
-  align-items: center;
-  gap: 15px;
+  justify-content: flex-end;
+  border-top: 1px solid var(--border-color);
+  padding-top: 15px;
 }
 
-.author-image {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  overflow: hidden;
-  border: 3px solid var(--primary-color);
-}
-
-.author-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.author-info {
+  text-align: right;
 }
 
 .author-info h4 {

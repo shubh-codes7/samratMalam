@@ -1,4 +1,5 @@
 import { companyInfo } from '../data/companyInfo';
+import productImage from '../assets/Products/14.png';
 import './About.css';
 
 const About = () => {
@@ -8,7 +9,7 @@ const About = () => {
         <h2 className="section-title">About Us</h2>
         <div className="about-content">
           <div className="about-image">
-            <img src="/images/about/company.jpg" alt="Samrat Malam Pharmaceuticals" />
+            <img src={productImage} alt="Samrat Malam Pharmaceuticals" />
           </div>
           <div className="about-text">
             <p>{companyInfo.about}</p>

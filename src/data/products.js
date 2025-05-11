@@ -1,10 +1,15 @@
+import product1 from '../assets/Products/Product 1.jpeg';
+import product2 from '../assets/Products/Product 2.jpeg';
+import product3 from '../assets/Products/Product 3.jpeg';
+import product4 from '../assets/Products/14.png';
+
 export const products = [
   {
     id: 1,
     name: "Samvita Plus",
     description: "Multivitamin supplement with essential minerals for daily immune support",
     shortDescription: "Complete multivitamin supplement",
-    image: "/images/products/samvita-plus.jpg",
+    image: product1,
     sizes: [
       { size: "30 tablets", price: 299 },
       { size: "60 tablets", price: 549 },
@@ -22,7 +27,7 @@ export const products = [
     name: "Glucocare",
     description: "Advanced formula to support healthy blood sugar levels and metabolic function",
     shortDescription: "Blood sugar support formula",
-    image: "/images/products/glucocare.jpg",
+    image: product2,
     sizes: [
       { size: "30 tablets", price: 399 },
       { size: "60 tablets", price: 749 }
@@ -39,7 +44,7 @@ export const products = [
     name: "ArthroRelief",
     description: "Joint pain relief formula with glucosamine and chondroitin for improved mobility",
     shortDescription: "Joint pain relief formula",
-    image: "/images/products/arthrorelief.jpg",
+    image: product3,
     sizes: [
       { size: "30 capsules", price: 449 },
       { size: "60 capsules", price: 849 }
@@ -56,7 +61,7 @@ export const products = [
     name: "CardioGuard",
     description: "Heart health supplement with CoQ10 and Omega-3 fatty acids for cardiovascular support",
     shortDescription: "Heart health supplement",
-    image: "/images/products/cardioguard.jpg",
+    image: product4,
     sizes: [
       { size: "30 softgels", price: 499 },
       { size: "60 softgels", price: 899 }
@@ -73,7 +78,7 @@ export const products = [
     name: "ImmunoBoost",
     description: "Powerful immune system booster with zinc, vitamin C, and elderberry extract",
     shortDescription: "Immune system booster",
-    image: "/images/products/immunoboost.jpg",
+    image: product1,
     sizes: [
       { size: "30 tablets", price: 349 },
       { size: "60 tablets", price: 649 },

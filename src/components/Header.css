@@ -10,9 +10,21 @@
 }
 
 .header.scrolled {
-  background-color: var(--white);
+  background-color: var(--accent-color);
   box-shadow: var(--shadow);
   padding: 10px 0;
+}
+
+.header.scrolled .logo h1 {
+  color: var(--accent-color-red);
+}
+
+.header.scrolled .nav-menu a {
+  color: var(--primary-color);
+}
+
+.header.scrolled .nav-menu a:hover {
+  color: var(--accent-color-red);
 }
 
 .header-content {
@@ -29,6 +41,7 @@
 .logo h1 {
   font-size: 24px;
   color: var(--primary-color);
+  color: #ffde00;
   margin: 0;
 }
 
@@ -38,7 +51,7 @@
 }
 
 .nav-menu a {
-  color: var(--text-color);
+  color: var(--accent-color);
   font-weight: 500;
   padding: 5px 10px;
   transition: var(--transition);
