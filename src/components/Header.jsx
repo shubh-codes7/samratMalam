@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { companyInfo } from '../data/companyInfo';
 import { useCart } from '../context/CartContext';
@@ -8,6 +8,7 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const { totalQuantity } = useCart();
+  const menuRef = useRef(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -24,8 +25,27 @@ const Header = () => {
     };
   }, []);
 
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (menuRef.current && !menuRef.current.contains(event.target) && 
+          !event.target.classList.contains('mobile-menu-btn') && 
+          !event.target.parentElement?.classList.contains('mobile-menu-btn')) {
+        setIsMenuOpen(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
+
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
+  };
+
+  const closeMenu = () => {
+    setIsMenuOpen(false);
   };
 
   return (
@@ -35,22 +55,7 @@ const Header = () => {
           <Link to="/" className="logo">
             <h1>{companyInfo.shortName}</h1>
           </Link>
-          
-          <div className="mobile-menu-btn" onClick={toggleMenu}>
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
 
-          <nav className={`nav-menu ${isMenuOpen ? 'active' : ''}`}>
-            <ul>
-              <li><a href="#hero" onClick={() => setIsMenuOpen(false)}>Home</a></li>
-              <li><a href="#about" onClick={() => setIsMenuOpen(false)}>About Us</a></li>
-              <li><a href="#products" onClick={() => setIsMenuOpen(false)}>Products</a></li>
-              <li><a href="#testimonials" onClick={() => setIsMenuOpen(false)}>Testimonials</a></li>
-              <li><a href="#contact" onClick={() => setIsMenuOpen(false)}>Contact</a></li>
-            </ul>
-          </nav>
 
           <div className="cart-icon">
             <Link to="/cart">

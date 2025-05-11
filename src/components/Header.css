@@ -112,9 +112,32 @@
   font-weight: 600;
 }
 
+.close-menu {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  display: none;
+}
+
+.close-menu svg {
+  width: 24px;
+  height: 24px;
+  stroke: var(--primary-color);
+  transition: var(--transition);
+}
+
+.close-menu:hover svg {
+  stroke: var(--accent-color-red);
+}
+
 @media (max-width: 768px) {
   .mobile-menu-btn {
     display: flex;
+  }
+
+  .close-menu {
+    display: block;
   }
 
   .nav-menu {

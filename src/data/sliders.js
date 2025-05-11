@@ -22,6 +22,6 @@ export const sliders = [
     title: "Committed to Your Well-being",
     description: "Enhancing lives through quality healthcare products",
     image: product3,
-    buttonText: "Our Story"
+    buttonText: "Buy Now"
   }
 ]; 

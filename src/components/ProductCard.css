@@ -1,5 +1,5 @@
 .product-card {
-  background-color: var(--white);
+  background-color: var(--secondary-color);
   border-radius: 8px;
   overflow: hidden;
   box-shadow: var(--shadow);

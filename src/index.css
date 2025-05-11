@@ -1,6 +1,7 @@
 :root {
   --primary-color: #204a06;
-  --secondary-color: #636009;
+  --secondary-color: #d3f4d5;
+  /* --secondary-color: #c9f4cb; */
   --accent-color: #ffde00;
   --accent-color-red: #b01515;
   --text-color: #333;
@@ -33,9 +34,6 @@ a {
   transition: var(--transition);
 }
 
-a:hover {
-  color: var(--secondary-color);
-}
 
 ul {
   list-style: none;

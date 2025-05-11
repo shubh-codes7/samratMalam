@@ -10,6 +10,7 @@ const ProductDetail = () => {
   const [selectedSize, setSelectedSize] = useState(null);
   const [quantity, setQuantity] = useState(1);
   const [loading, setLoading] = useState(true);
+  const [notification, setNotification] = useState({ show: false, message: '' });
   const { addToCart } = useCart();
 
   useEffect(() => {
@@ -27,6 +28,17 @@ const ProductDetail = () => {
   function handleAddToCart () {
     if (!product || !selectedSize) return;
     addToCart(product, selectedSize, quantity);
+    
+    // Show notification
+    setNotification({
+      show: true,
+      message: `${product.name} (${selectedSize.size}) added to cart!`
+    });
+    
+    // Hide notification after 3 seconds
+    setTimeout(() => {
+      setNotification({ show: false, message: '' });
+    }, 3000);
   };
 
   const handleQuantityChange = (change) => {
@@ -61,6 +73,11 @@ const ProductDetail = () => {
 
   return (
     <div className="product-detail-page">
+      {notification.show && (
+        <div className="notification">
+          {notification.message}
+        </div>
+      )}
       <div className="container">
         <div className="breadcrumb">
           <Link to="/">Home</Link> / <Link to="/#products">Products</Link> / <span>{product.name}</span>
