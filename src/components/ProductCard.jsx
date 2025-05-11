@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { companyInfo } from '../data/companyInfo';
 import './ProductCard.css';
 
 const ProductCard = ({ product }) => {
@@ -39,14 +38,6 @@ const ProductCard = ({ product }) => {
           <Link to={`/product/${product.id}`} className="btn btn-secondary">
             View Details
           </Link>
-          <a 
-            href={`https://wa.me/91${companyInfo?.contact?.whatsapp?.replace(/\D/g, '')}?text=I'm interested in buying ${product.name} (${selectedSize.size}) for ₹${selectedSize.price}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn btn-primary"
-          >
-            Buy Now
-          </a>
         </div>
       </div>
     </div>

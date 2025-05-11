@@ -1,14 +1,16 @@
 import { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { products } from '../data/products';
-import { companyInfo } from '../data/companyInfo';
+import { useCart } from '../context/CartContext';
 import './ProductDetail.css';
 
 const ProductDetail = () => {
   const { id } = useParams();
   const [product, setProduct] = useState(null);
   const [selectedSize, setSelectedSize] = useState(null);
+  const [quantity, setQuantity] = useState(1);
   const [loading, setLoading] = useState(true);
+  const { addToCart } = useCart();
 
   useEffect(() => {
     // Find the product by ID
@@ -22,24 +24,21 @@ const ProductDetail = () => {
     setLoading(false);
   }, [id]);
 
-  const handleSendWhatsApp = () => {
+  function handleAddToCart () {
     if (!product || !selectedSize) return;
-    
-    const whatsappNumber = companyInfo.contact.whatsapp.replace(/\D/g, '');
-    const message = `I'm interested in buying ${product.name} (${selectedSize.size}) for ₹${selectedSize.price}`;
-    const whatsappUrl = `https://wa.me/91${whatsappNumber}?text=${encodeURIComponent(message)}`;
-    
-    window.open(whatsappUrl, '_blank');
+    addToCart(product, selectedSize, quantity);
   };
 
-  const handleSendEmail = () => {
-    if (!product || !selectedSize) return;
-    
-    const subject = `Order Inquiry: ${product.name}`;
-    const body = `I'm interested in buying ${product.name} (${selectedSize.size}) for ₹${selectedSize.price}. Please provide more information.`;
-    const mailtoUrl = `mailto:${companyInfo.contact.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-    
-    window.location.href = mailtoUrl;
+  const handleQuantityChange = (change) => {
+    const newQuantity = quantity + change;
+    if (newQuantity >= 1) {
+      setQuantity(newQuantity);
+    }
+  };
+
+  const calculateTotalPrice = () => {
+    if (!selectedSize) return 0;
+    return selectedSize.price * quantity;
   };
 
   if (loading) {
@@ -101,18 +100,41 @@ const ProductDetail = () => {
               </div>
             </div>
             
+            <div className="product-quantity">
+              <h3>Quantity</h3>
+              <div className="quantity-selector">
+                <button 
+                  className="quantity-btn" 
+                  onClick={() => handleQuantityChange(-1)}
+                  disabled={quantity <= 1}
+                >
+                  -
+                </button>
+                <span>{quantity}</span>
+                <button 
+                  className="quantity-btn" 
+                  onClick={() => handleQuantityChange(1)}
+                >
+                  +
+                </button>
+              </div>
+            </div>
+            
             <div className="product-price">
               <h3>Price</h3>
-              <span>₹{selectedSize?.price}</span>
+              <div className="price-details">
+                <span className="unit-price">₹{selectedSize?.price} x {quantity}</span>
+                <span className="total-price">₹{calculateTotalPrice()}</span>
+              </div>
             </div>
             
             <div className="product-actions">
-              <button onClick={handleSendWhatsApp} className="btn btn-primary">
-                Buy via WhatsApp
+              <button onClick={handleAddToCart} className="btn btn-primary">
+                Add to Cart
               </button>
-              <button onClick={handleSendEmail} className="btn btn-secondary">
-                Buy via Email
-              </button>
+              <Link to="/cart" className="btn btn-secondary">
+                Go to Cart
+              </Link>
             </div>
           </div>
         </div>

@@ -42,9 +42,9 @@ const HeroSlider = () => {
                 <div className="hero-content">
                   <h1>{slide.title}</h1>
                   <p>{slide.description}</p>
-                  <Link to="#products" className="btn btn-primary">
+                  <a href="#products" className="btn btn-primary">
                     {slide.buttonText}
-                  </Link>
+                  </a>
                 </div>
               </div>
             </div>

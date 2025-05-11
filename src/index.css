@@ -62,20 +62,12 @@ button, .btn {
   color: var(--white);
 }
 
-.btn-primary:hover {
-  background-color: #085a9d;
-  color: var(--white);
-}
 
 .btn-secondary {
   background-color: var(--accent-color);
   color: var(--text-color);
 }
 
-.btn-secondary:hover {
-  background-color: #3d8b40;
-  color: var(--white);
-}
 
 .container {
   width: 100%;
