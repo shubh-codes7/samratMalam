@@ -61,7 +61,7 @@
 
 /* Swiper custom styles */
 .testimonials .swiper-pagination {
-  bottom: 10px;
+  bottom: 0;
 }
 
 .testimonials .swiper-pagination-bullet {

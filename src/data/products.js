@@ -6,55 +6,55 @@ import product4 from '../assets/Products/14.png';
 export const products = [
   {
     id: 1,
-    name: "Samvita Plus",
+    name: "Samral malam",
     description: "Multivitamin supplement with essential minerals for daily immune support",
     shortDescription: "Complete multivitamin supplement",
     image: product1,
     sizes: [
-      { size: "30 tablets", price: 299 },
-      { size: "60 tablets", price: 549 },
-      { size: "90 tablets", price: 799 }
+      { size: "30 gm", price: 99 },
+      { size: "60 gm", price: 49 },
+      { size: "90 gm", price: 99 }
     ],
     benefits: [
       "Boosts immunity",
       "Improves energy levels",
       "Supports overall health"
     ],
-    category: "Supplements"
+    category: "Muscle Pain"
   },
   {
     id: 2,
-    name: "Glucocare",
+    name: "Samral Balm",
     description: "Advanced formula to support healthy blood sugar levels and metabolic function",
     shortDescription: "Blood sugar support formula",
     image: product2,
     sizes: [
-      { size: "30 tablets", price: 399 },
-      { size: "60 tablets", price: 749 }
+      { size: "30 gm", price: 39 },
+      { size: "60 gm", price: 74 }
     ],
     benefits: [
       "Supports healthy glucose metabolism",
       "Contains natural ingredients",
       "Helps maintain energy levels"
     ],
-    category: "Diabetes Care"
+    category: "Cold"
   },
   {
     id: 3,
-    name: "ArthroRelief",
+    name: "Inhailer",
     description: "Joint pain relief formula with glucosamine and chondroitin for improved mobility",
     shortDescription: "Joint pain relief formula",
     image: product3,
     sizes: [
-      { size: "30 capsules", price: 449 },
-      { size: "60 capsules", price: 849 }
+      { size: "30 gm", price: 44 },
+      { size: "60 gm", price: 84 }
     ],
     benefits: [
       "Reduces joint inflammation",
       "Improves mobility",
       "Strengthens cartilage"
     ],
-    category: "Pain Management"
+    category: "Cold"
   },
   {
     id: 4,
@@ -63,15 +63,15 @@ export const products = [
     shortDescription: "Heart health supplement",
     image: product4,
     sizes: [
-      { size: "30 softgels", price: 499 },
-      { size: "60 softgels", price: 899 }
+      { size: "30 ", price: 49 },
+      { size: "60 ", price: 89 }
     ],
     benefits: [
       "Supports heart function",
       "Helps maintain healthy cholesterol levels",
       "Promotes circulation"
     ],
-    category: "Cardiovascular Health"
+    category: "Joint Pain"
   },
   {
     id: 5,

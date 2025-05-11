@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { companyInfo } from '../data/companyInfo';
+import { FaMapMarkerAlt, FaPhone, FaEnvelope, FaWhatsapp, FaFacebook, FaInstagram, FaTwitter, FaLinkedin } from 'react-icons/fa';
 import './Footer.css';
 
 const Footer = () => {
@@ -19,26 +20,26 @@ const Footer = () => {
           
           <div className="footer-contact">
             <h3>Contact Us</h3>
-            <p><i className="icon-location"></i> {companyInfo.contact.address}</p>
-            <p><i className="icon-phone"></i> {companyInfo.contact.phone}</p>
-            <p><i className="icon-email"></i> {companyInfo.contact.email}</p>
-            <p><i className="icon-whatsapp"></i> WhatsApp: {companyInfo.contact.whatsapp}</p>
+            <p><FaMapMarkerAlt /> {companyInfo.contact.address}</p>
+            <p><FaPhone /> {companyInfo.contact.phone}</p>
+            <p><FaEnvelope /> {companyInfo.contact.email}</p>
+            <p><FaWhatsapp /> WhatsApp: {companyInfo.contact.whatsapp}</p>
           </div>
           
           <div className="footer-social">
             <h3>Follow Us</h3>
             <div className="social-icons">
               <a href={companyInfo.socialMedia.facebook} target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-                <i className="icon-facebook"></i>
+                <FaFacebook />
               </a>
               <a href={companyInfo.socialMedia.instagram} target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-                <i className="icon-instagram"></i>
+                <FaInstagram />
               </a>
               <a href={companyInfo.socialMedia.twitter} target="_blank" rel="noopener noreferrer" aria-label="Twitter">
-                <i className="icon-twitter"></i>
+                <FaTwitter />
               </a>
               <a href={companyInfo.socialMedia.linkedin} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                <i className="icon-linkedin"></i>
+                <FaLinkedin />
               </a>
             </div>
           </div>

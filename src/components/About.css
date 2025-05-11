@@ -57,6 +57,11 @@
   flex-shrink: 0;
 }
 
+.feature-icon svg {
+  width: 24px;
+  height: 24px;
+}
+
 .feature-content h3 {
   font-size: 18px;
   margin-bottom: 8px;

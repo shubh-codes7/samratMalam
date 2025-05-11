@@ -1,5 +1,6 @@
 import { companyInfo } from '../data/companyInfo';
 import productImage from '../assets/Products/14.png';
+import { FaBullseye, FaEye, FaMedal } from 'react-icons/fa';
 import './About.css';
 
 const About = () => {
@@ -17,7 +18,7 @@ const About = () => {
             <div className="about-features">
               <div className="feature">
                 <div className="feature-icon">
-                  <i className="icon-mission"></i>
+                  <FaBullseye />
                 </div>
                 <div className="feature-content">
                   <h3>Our Mission</h3>
@@ -27,7 +28,7 @@ const About = () => {
               
               <div className="feature">
                 <div className="feature-icon">
-                  <i className="icon-vision"></i>
+                  <FaEye />
                 </div>
                 <div className="feature-content">
                   <h3>Our Vision</h3>
@@ -37,7 +38,7 @@ const About = () => {
               
               <div className="feature">
                 <div className="feature-icon">
-                  <i className="icon-quality"></i>
+                  <FaMedal />
                 </div>
                 <div className="feature-content">
                   <h3>Quality Assurance</h3>
