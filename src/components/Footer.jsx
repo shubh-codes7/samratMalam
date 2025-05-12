@@ -35,12 +35,7 @@ const Footer = () => {
               <a href={companyInfo.socialMedia.instagram} target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                 <FaInstagram />
               </a>
-              <a href={companyInfo.socialMedia.twitter} target="_blank" rel="noopener noreferrer" aria-label="Twitter">
-                <FaTwitter />
-              </a>
-              <a href={companyInfo.socialMedia.linkedin} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                <FaLinkedin />
-              </a>
+              
             </div>
           </div>
         </div>

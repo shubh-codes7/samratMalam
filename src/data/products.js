@@ -17,7 +17,7 @@ export const products = [
     ],
     image: product1,
     sizes: [
-      { size: "20 gm", price: 80 },
+      // { size: "20 gm", price: 80 },
       { size: "50 gm", price: 150 },
     ],
     benefits: [
@@ -27,41 +27,6 @@ export const products = [
       "Swelling"
     ],
     category: "Muscle Pain"
-  },
-  {
-    id: 2,
-    name: "Samrat Strong Balm",
-    description: "Joint pain relief formula with glucosamine and chondroitin for improved mobility",
-    shortDescription: "Joint pain relief formula",
-    image: product2,
-    sizes: [
-      { size: "20 gm", price: 50 },
-      { size: "60 gm", price: 74 }
-    ],
-    benefits: [
-      "Knee Pain",
-      "Neck Pain",
-      "Back Pain",
-      "Swelling"
-    ],
-    category: "Joint Pain"
-  },
-  {
-    id: 3,
-    name: "Samrat Strong Balm",
-    description: "Joint pain relief formula with glucosamine and chondroitin for improved mobility",
-    shortDescription: "Joint pain relief formula",
-    image: product3,
-    sizes: [
-      { size: "30 gm", price: 44 },
-      { size: "60 gm", price: 84 }
-    ],
-    benefits: [
-      "Knee Pain",
-      "Neck Pain",
-      "Back Pain",
-      "Swelling"
-    ],
-    category: "Cold"
-  },
+  }
+  
 ]; 
