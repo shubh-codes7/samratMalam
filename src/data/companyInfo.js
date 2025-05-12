@@ -1,10 +1,10 @@
 export const companyInfo = {
   name: "Madhukar Pharmacy",
   shortName: "Samrat Malam",
-  tagline: "Enhancing Lives Through Quality Healthcare",
-  about: "Samrat Malam Pharmaceuticals is a leading manufacturer of high-quality pharmaceutical products committed to improving health and well-being. With over 15 years of experience in the industry, we have established ourselves as a trusted name in healthcare. Our state-of-the-art manufacturing facilities and dedicated research team ensure that we deliver products that meet the highest standards of quality and efficacy.",
-  mission: "To provide innovative and effective healthcare solutions that enhance the quality of life for our customers.",
-  vision: "To be the most trusted pharmaceutical company known for quality, innovation, and customer satisfaction.",
+  tagline: "Rooted in Tradition. Driven by Innovation.",
+  about: "At Samrat Malam Pharmaceuticals, we are committed to enhancing lives through the power of Ayurveda and modern science. With over 25 years of experience in the healthcare industry, we have earned a reputation for excellence, trust, and quality. Our flagship product, Samrat Malam, is crafted using a unique blend of Ayurvedic herbs and Narayan oil, known for their therapeutic benefits. Designed to provide fast and lasting relief from pain, inflammation, and muscular discomfort, it has become a trusted remedy in homes across India.",
+  mission: "Combine the wisdom of Ayurveda with modern science, Provide high-quality, affordable healthcare products",
+  vision: "To be a trusted leader in Ayurvedic and pharmaceutical healthcare—delivering innovative, effective, and natural solutions that enhance everyday wellness and improve lives globally.",
   foundedYear: 2001,
   contact: {
     email: "contact@samratmalam.com",
@@ -13,8 +13,9 @@ export const companyInfo = {
     address: "Madhukar Pharmacy, Soegaon, Aurangabad, Maharashtra, India"
   },
   socialMedia: {
-    facebook: "https://facebook.com/samratmalam",
+    whatsapp: "https://api.whatsapp.com/send/?phone=917057822190",
     instagram: "https://www.instagram.com/samratmalam49/",
+    facebook: "https://facebook.com/samratmalam",
     twitter: "https://twitter.com/samratmalam",
     linkedin: "https://linkedin.com/company/samratmalam"
   }

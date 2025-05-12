@@ -23,7 +23,7 @@ const Footer = () => {
             <p><FaMapMarkerAlt /> {companyInfo.contact.address}</p>
             <p><FaPhone /> {companyInfo.contact.phone}</p>
             <p><FaEnvelope /> {companyInfo.contact.email}</p>
-            <p><FaWhatsapp /> WhatsApp: {companyInfo.contact.whatsapp}</p>
+            <p><FaWhatsapp /> {companyInfo.contact.whatsapp}</p>
           </div>
           
           <div className="footer-social">
