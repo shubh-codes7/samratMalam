@@ -103,4 +103,12 @@
     max-width: 100%;
     text-align: center;
   }
+
+  .hero-slider{
+    height: 60vh;
+  }
+
+  .hero-slide {
+    height: 60vh;
+  }
 } 

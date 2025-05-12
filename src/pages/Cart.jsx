@@ -21,8 +21,9 @@ const Cart = () => {
       message += `${item.name} (${item.selectedSize.size}) - Quantity: ${item.quantity} - ₹${item.selectedSize.price * item.quantity}\n`;
     });
     
-    message += `\nTotal Amount: ₹${totalAmount}`;
-    const whatsappUrl = `https://wa.me/91${whatsappNumber}?text=${encodeURIComponent(message)}`;
+    message += `\nDelivery Charges: ₹49\n`;
+    message += `\nTotal Amount: ${totalAmount} + 49 = ₹${totalAmount+49}\n\n`;
+    const whatsappUrl = `https://wa.me/91${whatsappNumber}?text=${encodeURIComponent(message)}Address: `;
     
     window.open(whatsappUrl, '_blank');
   };
@@ -37,8 +38,8 @@ const Cart = () => {
       body += `${item.name} (${item.selectedSize.size}) - Quantity: ${item.quantity} - ₹${item.selectedSize.price * item.quantity}\n`;
     });
     
-    body += `\nTotal Amount: ₹${totalAmount}`;
-    const mailtoUrl = `mailto:${companyInfo.contact.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    body += `\nTotal Amount: ₹${totalAmount}\n\n`;
+    const mailtoUrl = `mailto:${companyInfo.contact.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}Address: `;
     
     window.location.href = mailtoUrl;
   };
@@ -112,10 +113,18 @@ const Cart = () => {
             </div>
             
             <div className="cart-summary">
+
+            <div className="delivery-charges">
+                <span>Delivery Charges:</span>
+                <span className="delivery-amount">₹49</span>
+              </div>
+
               <div className="cart-total">
                 <span>Total Amount:</span>
                 <span className="total-amount">₹{totalAmount}</span>
               </div>
+              
+              
               
               <div className="cart-actions">
                 <button onClick={handleSendWhatsApp} className="btn btn-primary">

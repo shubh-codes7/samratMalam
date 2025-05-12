@@ -122,6 +122,7 @@
   margin-top: 20px;
 }
 
+
 .cart-total {
   display: flex;
   justify-content: space-between;
@@ -130,11 +131,27 @@
   font-size: 1.2rem;
 }
 
+
 .total-amount {
   font-weight: 600;
   font-size: 1.5rem;
   color: #333;
 }
+
+
+.delivery-charges {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.1rem;
+}
+
+.delivery-amount {
+  font-weight: 400;
+  font-size: 1.1rem;
+  color: #333;
+}
+
 
 .cart-actions {
   display: flex;

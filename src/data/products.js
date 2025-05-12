@@ -6,30 +6,36 @@ import product4 from '../assets/Products/14.png';
 export const products = [
   {
     id: 1,
-    name: "Samral malam",
-    description: "Multivitamin supplement with essential minerals for daily immune support",
-    shortDescription: "Complete multivitamin supplement",
+    name: "Samrat Malam",
+    description: "Samrat Malam helps in all types of muscle pain and joint pain. It is made of of narayana oil which is a ayurvedic oil.",
+    shortDescription: "Samrat Malam helps in all types of muscle pain and joint pain.",
+    composition: [
+      "Oil of Narayan",
+      "Oil of Winter Green",
+      "Oil of Nelgiri",
+      "Rurpentine Oil"
+    ],
     image: product1,
     sizes: [
-      { size: "30 gm", price: 99 },
-      { size: "60 gm", price: 49 },
-      { size: "90 gm", price: 99 }
+      { size: "20 gm", price: 80 },
+      { size: "50 gm", price: 150 },
     ],
     benefits: [
-      "Boosts immunity",
-      "Improves energy levels",
-      "Supports overall health"
+      "Knee Pain",
+      "Neck Pain",
+      "Back Pain",
+      "Swelling"
     ],
     category: "Muscle Pain"
   },
   {
     id: 2,
-    name: "Samral Balm",
+    name: "Samrat Balm",
     description: "Advanced formula to support healthy blood sugar levels and metabolic function",
     shortDescription: "Blood sugar support formula",
     image: product2,
     sizes: [
-      { size: "30 gm", price: 39 },
+      { size: "20 gm", price: 50 },
       { size: "60 gm", price: 74 }
     ],
     benefits: [
@@ -37,11 +43,11 @@ export const products = [
       "Contains natural ingredients",
       "Helps maintain energy levels"
     ],
-    category: "Cold"
+    category: "Joint Pain"
   },
   {
     id: 3,
-    name: "Inhailer",
+    name: "Samrat Strong Balm",
     description: "Joint pain relief formula with glucosamine and chondroitin for improved mobility",
     shortDescription: "Joint pain relief formula",
     image: product3,
@@ -56,39 +62,4 @@ export const products = [
     ],
     category: "Cold"
   },
-  {
-    id: 4,
-    name: "CardioGuard",
-    description: "Heart health supplement with CoQ10 and Omega-3 fatty acids for cardiovascular support",
-    shortDescription: "Heart health supplement",
-    image: product4,
-    sizes: [
-      { size: "30 ", price: 49 },
-      { size: "60 ", price: 89 }
-    ],
-    benefits: [
-      "Supports heart function",
-      "Helps maintain healthy cholesterol levels",
-      "Promotes circulation"
-    ],
-    category: "Joint Pain"
-  },
-  {
-    id: 5,
-    name: "ImmunoBoost",
-    description: "Powerful immune system booster with zinc, vitamin C, and elderberry extract",
-    shortDescription: "Immune system booster",
-    image: product1,
-    sizes: [
-      { size: "30 tablets", price: 349 },
-      { size: "60 tablets", price: 649 },
-      { size: "120 tablets", price: 1199 }
-    ],
-    benefits: [
-      "Strengthens immune response",
-      "Provides antioxidant support",
-      "Helps fight seasonal threats"
-    ],
-    category: "Immunity"
-  }
 ]; 

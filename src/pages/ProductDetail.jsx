@@ -87,10 +87,11 @@ const ProductDetail = () => {
           <div className="product-detail-image">
             <img src={product.image} alt={product.name} />
           </div>
+
           
           <div className="product-detail-content">
             <h1>{product.name}</h1>
-            <p className="product-category">{product.category}</p>
+            <p className="product-category">Category: {product.category}</p>
             <p className="product-description">{product.description}</p>
             
             <div className="product-benefits">
@@ -140,8 +141,7 @@ const ProductDetail = () => {
             <div className="product-price">
               <h3>Price</h3>
               <div className="price-details">
-                <span className="unit-price">₹{selectedSize?.price} x {quantity}</span>
-                <span className="total-price">₹{calculateTotalPrice()}</span>
+                <span className="unit-price">₹{selectedSize?.price} x {quantity} = ₹{calculateTotalPrice()}</span>
               </div>
             </div>
             
