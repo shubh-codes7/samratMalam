@@ -23,7 +23,7 @@ const Cart = () => {
     
     message += `\nDelivery Charges: ₹49\n`;
     message += `\nTotal Amount: ${totalAmount} + 49 = ₹${totalAmount+49}\n\n`;
-    const whatsappUrl = `https://wa.me/91${whatsappNumber}?text=${encodeURIComponent(message)}Address: `;
+    const whatsappUrl = `https://wa.me/91${whatsappNumber}?text=${encodeURIComponent(message)}📌Address: `;
     
     window.open(whatsappUrl, '_blank');
   };

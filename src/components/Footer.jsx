@@ -29,8 +29,8 @@ const Footer = () => {
           <div className="footer-social">
             <h3>Follow Us</h3>
             <div className="social-icons">
-              <a href={companyInfo.socialMedia.facebook} target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-                <FaFacebook />
+              <a href={companyInfo.socialMedia.whatsapp} target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                <FaWhatsapp />
               </a>
               <a href={companyInfo.socialMedia.instagram} target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                 <FaInstagram />
@@ -47,6 +47,7 @@ const Footer = () => {
         
         <div className="footer-bottom">
           <p>&copy; {currentYear} {companyInfo.name}. All Rights Reserved.</p>
+          <p>Developed by<a href="https://www.linkedin.com/in/shubhamcodes7/">Pillars</a></p>
         </div>
       </div>
     </footer>

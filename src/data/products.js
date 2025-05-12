@@ -30,18 +30,19 @@ export const products = [
   },
   {
     id: 2,
-    name: "Samrat Balm",
-    description: "Advanced formula to support healthy blood sugar levels and metabolic function",
-    shortDescription: "Blood sugar support formula",
+    name: "Samrat Strong Balm",
+    description: "Joint pain relief formula with glucosamine and chondroitin for improved mobility",
+    shortDescription: "Joint pain relief formula",
     image: product2,
     sizes: [
       { size: "20 gm", price: 50 },
       { size: "60 gm", price: 74 }
     ],
     benefits: [
-      "Supports healthy glucose metabolism",
-      "Contains natural ingredients",
-      "Helps maintain energy levels"
+      "Knee Pain",
+      "Neck Pain",
+      "Back Pain",
+      "Swelling"
     ],
     category: "Joint Pain"
   },
@@ -56,9 +57,10 @@ export const products = [
       { size: "60 gm", price: 84 }
     ],
     benefits: [
-      "Reduces joint inflammation",
-      "Improves mobility",
-      "Strengthens cartilage"
+      "Knee Pain",
+      "Neck Pain",
+      "Back Pain",
+      "Swelling"
     ],
     category: "Cold"
   },

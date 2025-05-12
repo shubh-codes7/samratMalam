@@ -89,4 +89,8 @@
     align-items: center;
     text-align: center;
   }
+
+  .about-text p {
+    text-align: center;
+  }
 } 

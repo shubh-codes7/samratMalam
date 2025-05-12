@@ -1,5 +1,5 @@
 import { companyInfo } from '../data/companyInfo';
-import productImage from '../assets/Products/14.png';
+import productImage from '../assets/Products/product.png';
 import { FaBullseye, FaEye, FaMedal } from 'react-icons/fa';
 import './About.css';
 
@@ -9,9 +9,7 @@ const About = () => {
       <div className="container">
         <h2 className="section-title">About Us</h2>
         <div className="about-content">
-          <div className="about-image">
-            <img src={productImage} alt="Samrat Malam Pharmaceuticals" />
-          </div>
+          
           <div className="about-text">
             <p>{companyInfo.about}</p>
             
@@ -46,6 +44,9 @@ const About = () => {
                 </div>
               </div>
             </div>
+          </div>
+          <div className="about-image">
+            <img src={productImage} alt="Samrat Malam Pharmaceuticals" />
           </div>
         </div>
       </div>
