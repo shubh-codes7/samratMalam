@@ -1,7 +1,5 @@
-import product1 from '../assets/Products/Product 1.jpeg';
-import product2 from '../assets/Products/Product 2.jpeg';
-import product3 from '../assets/Products/Product 3.jpeg';
-import product4 from '../assets/Products/14.png';
+import product1 from '../assets/Products/Product1.jpeg';
+
 
 export const products = [
   {
@@ -21,12 +19,11 @@ export const products = [
       { size: "50 gm", price: 150 },
     ],
     benefits: [
-      "Knee Pain",
-      "Neck Pain",
-      "Back Pain",
+      "Muscle Pain",
+      "Joint Pain",
       "Swelling"
     ],
-    category: "Muscle Pain"
+    category: "Pain Relief"
   }
   
 ]; 

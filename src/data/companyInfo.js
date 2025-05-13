@@ -10,7 +10,7 @@ export const companyInfo = {
     email: "contact@samratmalam.com",
     phone: "7057822190",
     whatsapp: "7057822190",
-    address: "Madhukar Pharmacy, Soegaon, Aurangabad, Maharashtra, India"
+    address: "Madhukar Pharmacy, Soegaon, Chhatrapati Sambhajinagar, Maharashtra, India"
   },
   socialMedia: {
     whatsapp: "https://api.whatsapp.com/send/?phone=917057822190",
